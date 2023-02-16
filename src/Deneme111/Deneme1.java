@@ -13,6 +13,8 @@ public class Deneme1 {
      //  int harfSayısı = 0;
 
 
+
+
      //  for (int i = 0; i <= str.length() - 1; i++) {
      //      if (str.charAt(i) == harf) {
      //          harfSayısı++;
