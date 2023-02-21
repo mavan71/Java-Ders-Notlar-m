@@ -15,8 +15,12 @@ public class C04_arrays_equals {
         System.out.println("arr1, arr2 eşit mi : " + Arrays.equals(arr1, arr2));//True
 
         //Array'yi string'e convert(cevirme)...
-      String str=  Arrays.toString(arr1);//arr1 int array String data type cevirildi
+        String str = Arrays.toString(arr1);//arr1 int array String data type cevirildi
         System.out.println("str = " + str);//[1, 2, 21, 27, 44, 46, 79, 80]
         System.out.println("str.substring(3) = " + str.substring(3));// 2, 21, 27, 44, 46, 79, 80]
+
+
+
+
     }
 }

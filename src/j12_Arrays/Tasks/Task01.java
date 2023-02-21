@@ -16,7 +16,7 @@ public class Task01 {
             arr[i] = input.nextInt();
         }
         System.out.println("agam ahan da arrayin : " + Arrays.toString(arr));
-        ;
+
 
         Arrays.sort(arr);//array elemanları k->b sortingen  -> [1,2,21,27,44]
 
