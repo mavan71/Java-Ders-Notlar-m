@@ -12,7 +12,7 @@ public class Task13 {
         3 e bolunebilen sayi adedini print eden  code create ediniz (negatif sayilar dahil )
 
          */
-System.out.println("merhaba");
+System.out.println("merhaba1");
 
 
 
