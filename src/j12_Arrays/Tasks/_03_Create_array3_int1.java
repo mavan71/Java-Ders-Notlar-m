@@ -1,6 +1,6 @@
 package j12_Arrays.Tasks;
 
-public class _03_Create_array3_int {
+public class _03_Create_array3_int1 {
 
     public static void main(String[] args) {
 

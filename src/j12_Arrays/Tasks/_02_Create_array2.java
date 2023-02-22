@@ -3,7 +3,6 @@ package j12_Arrays.Tasks;
 import java.util.Arrays;
 
 public class _02_Create_array2 {
-
     public static void main(String[] args) {
 
     /*          int Array oluşturun.

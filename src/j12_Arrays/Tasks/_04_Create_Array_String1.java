@@ -1,6 +1,6 @@
 package j12_Arrays.Tasks;
 
-public class _04_Create_Array_String {
+public class _04_Create_Array_String1 {
 
     public static void main(String[] args) {
 

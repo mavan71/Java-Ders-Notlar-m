@@ -1,6 +1,6 @@
 package j12_Arrays.Tasks;
 
-public class _05_Array_with_for_if {
+public class _05_Array_with_for_if1 {
 
     public static void main(String[] args) {
 
