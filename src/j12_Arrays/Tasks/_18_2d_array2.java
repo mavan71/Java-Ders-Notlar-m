@@ -13,6 +13,16 @@ public class _18_2d_array2 {
 
         //Kodu aşağıya yazınız.
 
+        int sayiArr[][]={{5,2,1} , {10,2,3,6} , {1,2}};
+        int topla=0;
+        for (int i = 0; i <sayiArr.length ; i++) {
+            for (int j = 0; j <sayiArr[i].length; j++) {
+                topla+=sayiArr[i][j];
+            }
+
+        }
+        System.out.println(topla);
+
 
     }
 }

@@ -19,7 +19,8 @@ public class _13_Advance_zeroFront {
        */
 
         // Kodu aşağıya yazınız..
+        int sayiArr[] = {0, 1, 2, 3, 4, 5, 6, 0, 0, 0};
+        Arrays.sort(sayiArr);
+        System.out.println("Arrays.toString(sayiArr) = " + Arrays.toString(sayiArr));
 
-
-    }
-}
+    }}

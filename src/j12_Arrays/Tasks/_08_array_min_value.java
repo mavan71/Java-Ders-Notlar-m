@@ -15,7 +15,7 @@ public class _08_array_min_value {
         int sayiArr[]={14 , 19 , 5 , 21};
 
         Arrays.sort(sayiArr);
-        Arrays.toString(sayiArr);
+       // Arrays.toString(sayiArr);
         System.out.println(Arrays.toString(sayiArr));
         System.out.println("sayiArr'in en küçük elemanı " +sayiArr[0]);
     }

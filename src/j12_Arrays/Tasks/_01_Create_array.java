@@ -14,6 +14,10 @@ public class _01_Create_array {
         //Kodu aşağıya yazınız.
  String meyveArr[]={"Apple","Orange","Banana","Kiwi"};
         System.out.println(Arrays.toString(meyveArr));
+        String ingMeyveArr[]={"Apple","Orange","Banan","Kiwi"};
+        String yeniString =Arrays.toString(ingMeyveArr);
+        System.out.println(yeniString);
+        System.out.println(Arrays.toString(ingMeyveArr));
 
     }
 }

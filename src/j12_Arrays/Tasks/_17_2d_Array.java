@@ -1,5 +1,7 @@
 package j12_Arrays.Tasks;
 
+import java.util.Arrays;
+
 public class _17_2d_Array {
 
     public static void main(String[] args) {
@@ -12,7 +14,16 @@ public class _17_2d_Array {
 
         //Kodu aşağıya yazınız.
 
+int sayiArr[][] = {{2,3,2} , {4,1,5} , {7,2,5}};
+        System.out.println(Arrays.deepToString(sayiArr));
 
+        for (int i = 0; i <sayiArr.length ; i++) {
+            for (int j = 0; j <sayiArr[i].length ; j++) {
+                if(sayiArr[i][j]==2){
+                    sayiArr[i][j]=6;
+                }
+            }
+        }
+        System.out.println(Arrays.deepToString(sayiArr));
 
-    }
-}
+}   }

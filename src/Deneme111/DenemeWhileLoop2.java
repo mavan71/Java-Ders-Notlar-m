@@ -78,35 +78,115 @@ public class DenemeWhileLoop2 {
 
       // Task-> girilen 7 sayının en buyugunu print eden code create ediniz
 
-      int sayiAdedi=0;
-      int enBuyukSayi=0;
-      while (sayiAdedi<7){
-          System.out.println("Ağam bir sayi gir");
-          int sayi4= input.nextInt();
-          sayiAdedi++;
-          if (enBuyukSayi<sayi4){
-              enBuyukSayi=sayi4;
-          }
-      }
-      System.out.println("ağam girdiğin sayiların en büyüğü "+enBuyukSayi+" dır");
+ // int sayiAdedi=0;
+ // int enBuyukSayi=0;
+ // while (sayiAdedi<7){
+ //     System.out.println("Ağam bir sayi gir");
+ //     int sayi4= input.nextInt();
+ //     sayiAdedi++;
+ //     if (enBuyukSayi<sayi4){
+ //         enBuyukSayi=sayi4;
+ //     }
+ // }
+ // System.out.println("ağam girdiğin sayiların en büyüğü "+enBuyukSayi+" dır");
 
-        int bykSayi = 0;
+ //   int bykSayi = 0;
 
 
-        int sayac = 1;
+ //   int sayac = 1;
 
-        while (sayac<= 7) {
+ //   while (sayac<= 7) {
 
-            System.out.print(sayac + ". sayi giriniz : ");
+ //       System.out.print(sayac + ". sayi giriniz : ");
 
-             int girilenSayi = input.nextInt();
-            bykSayi = (bykSayi > girilenSayi ? bykSayi : girilenSayi);
+ //        int girilenSayi = input.nextInt();
+ //       bykSayi = (bykSayi > girilenSayi ? bykSayi : girilenSayi);
 
-            //bykSayi = Math.max(input.nextInt(), bykSayi);//hangi sayı maximumise o sayıbykSayi olarak atanır
+ //       //bykSayi = Math.max(input.nextInt(), bykSayi);//hangi sayı maximumise o sayıbykSayi olarak atanır
 
-            sayac++;
-        }
-        System.out.println("bykSayi = " + bykSayi);
+ //       sayac++;
+ //   }
+ //   System.out.println("bykSayi = " + bykSayi);
 
+//task-> girilen tamsayı için çarpım tablosu print eden code create ediniz
+        //input: 8-> output :8x1=8, 8x2=16... 8x10=80
+     //  System.out.println("Ağam hele sayi gir");
+     //  int sayi5=input.nextInt();
+     //   int sayi6=1;
+     //   while (sayi6<=10){
+     //       System.out.println(sayi5+" X "+sayi6+"="+sayi5*sayi6);
+     //       sayi6++;
+     //   }
+//Kullanicidan ismini ve soyisimi girmesini isteyin, sonrasinda konsola tam ismini buyuk harfler ile yazdirin
+        System.out.println("Ağam ismini ve soy ismini gir");
+         String isim=input.nextLine();
+         String fulName=  isim.toUpperCase();
+        System.out.println(fulName);
+        // // String seklinde verlen asagidaki fiyatlarin toplamini bulunuz
+        String  str1= "$13.99";
+        String str2= "$10.55";
+        //// ipucu: Double parseDouble() methodunu kullanabilirsiniz.
+        str1=str1.replaceAll("\\D","");
+        str2=str2.replaceAll("\\D","");
+        System.out.println("str1="+str1);
+        System.out.println("str2="+str2);
+        double sayi1=Double.parseDouble(str1);
+        double sayi2=Double.parseDouble(str2);
+        double toplam=(sayi1+sayi2)/100;
+        System.out.println("$"+toplam);
+
+
+        /*
+         * Kulanicidan bir kelime isteyin eger kelime 3 ve daha fazla harfden olusuyorsa son
+         * iki harfini 3 kere yan yana yazdirin. degil ise girilen kelimeyi yazdirin
+         *
+         * ornek
+         * input = Ece
+         * output = cecece
+         *
+         * input = el
+         * output = el
+         */
+      // System.out.println("Bir Kelime Gir");
+      // String str3=input.nextLine();
+      // String sonIkiHarf=str3.substring(str3.length()-2);
+      // if(str3.length()>=3){
+      //     System.out.println(sonIkiHarf);
+      // }else System.out.println(str3);
+      /*
+       * Kullanicidan 4 kelime isteyin ve cumle olarak yazdirip sonuna . koyun
+         *
+         * Ornek : Inputs : cesaret, insana, sinirlarini, ogretir
+         *         Output : Cesaret insana sinirlarini ogretir.
+         *
+         */
+
+    // System.out.println("4 Kelime giriniz");
+    // String a=input.nextLine();
+    // String b=input.nextLine();
+    // String c=input.nextLine();
+    // String d=input.nextLine();
+
+    // System.out.println(a.substring(0,1).toUpperCase()+a.substring(1)+" "+b+" "+c+" "+d+".");
+/* String girildiginde ilk iki karakteri haric string return eden java programi yaziniz
+        Ancak ilk karakter 'g' ve ikinci karakteri 'h' ise bu karakterler de return edilsin (gh  -  g  -  h   : 3 durum var)
+       ORNEK:          INPUT     OUTPUT
+                       goat        gat
+                      photo        hoto
+                      ghost        ghost
+                      kalem        lem
+
+*/
+        System.out.println("Bir kelime giriniz");
+        String str4=input.nextLine().toLowerCase();
+        if(str4.startsWith("gh")){
+            System.out.println(str4);
+        }else if (str4.charAt(0)=='g'){
+            System.out.println(str4.charAt(0)+str4.substring(2,str4.length()));
+        }else if(str4.charAt(1)=='h'){
+            System.out.println(str4.charAt(1)+str4.substring(2,str4.length()));
+
+        }else System.out.println(str4.substring(2,str4.length()));
     }
     }
+
