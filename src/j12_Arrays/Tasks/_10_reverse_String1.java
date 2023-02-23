@@ -1,6 +1,6 @@
 package j12_Arrays.Tasks;
 
-public class _10_reverse_String {
+public class _10_reverse_String1 {
 
     public static void main(String[] args) {
 

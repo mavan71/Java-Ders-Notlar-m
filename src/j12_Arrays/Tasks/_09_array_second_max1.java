@@ -2,7 +2,7 @@ package j12_Arrays.Tasks;
 
 import java.util.Arrays;
 
-public class _09_array_second_max {
+public class _09_array_second_max1 {
 
     public static void main(String[] args) {
 

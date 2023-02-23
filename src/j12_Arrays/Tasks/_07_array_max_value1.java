@@ -2,7 +2,7 @@ package j12_Arrays.Tasks;
 
 import java.util.Arrays;
 
-public class _07_array_max_value {
+public class _07_array_max_value1 {
 
     public static void main(String[] args) {
 

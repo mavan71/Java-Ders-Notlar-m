@@ -14,7 +14,7 @@ public class _17_2d_Array {
 
         //Kodu aşağıya yazınız.
 
-int sayiArr[][] = {{2,3,2} , {4,1,5} , {7,2,5}};
+        int sayiArr[][] = {{2,3,2} , {4,1,5} , {7,2,5}};
         System.out.println(Arrays.deepToString(sayiArr));
 
         for (int i = 0; i <sayiArr.length ; i++) {

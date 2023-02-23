@@ -1,6 +1,6 @@
 package j12_Arrays.Tasks;
 
-public class _11_Average_of_Array {
+public class _11_Average_of_Array1 {
 
     public static void main(String[] args) {
 

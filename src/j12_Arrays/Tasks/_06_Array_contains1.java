@@ -1,6 +1,6 @@
 package j12_Arrays.Tasks;
 
-public class _06_Array_contains {
+public class _06_Array_contains1 {
 
     public static void main(String[] args) {
 

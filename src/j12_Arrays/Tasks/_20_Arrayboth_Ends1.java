@@ -2,7 +2,7 @@ package j12_Arrays.Tasks;
 
 import java.util.Arrays;
 
-public class _20_Arrayboth_Ends {
+public class _20_Arrayboth_Ends1 {
 
     public static void main(String[] args) {
 
@@ -16,6 +16,10 @@ public class _20_Arrayboth_Ends {
       */
         //Kodu aşağıya yazınız..
 
+        int sayiArr[]={1,2,3,4};
+        System.out.println("Arrays.toString(sayiArr) = " + Arrays.toString(sayiArr));
 
+        int yeniArr[]={sayiArr[0],sayiArr[sayiArr.length-1]};
+        System.out.println("Arrays.toString(yeniArr) = " + Arrays.toString(yeniArr));
     }
 }
