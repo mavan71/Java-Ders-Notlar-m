@@ -13,14 +13,14 @@ public class _14_String_method_replace1 {
         HellK WKrld
          */
 
-        tersCevirme();
+        harfDegisi();
 
 
 
 
     }
 
-    private static void tersCevirme() {
+    private static void harfDegisi() {
         String str="Hello world";
         String strArr[]=str.split(" ");
         System.out.println("Arrays.toString(strArr) = " + Arrays.toString(strArr));

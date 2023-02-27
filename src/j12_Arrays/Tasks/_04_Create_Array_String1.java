@@ -12,7 +12,7 @@ public class _04_Create_Array_String1 {
 
         // Kodu aşağıya yazınız..
 
-String eyaletArr[]={"new jersey" , "new york", "boston","California"};
-        System.out.println(eyaletArr.length);
+        String eyaletArr[]={"new jersey" , "new york", "boston","California"};
+        System.out.println("EyaletArr eleman Sayısı " +eyaletArr.length);
     }
 }

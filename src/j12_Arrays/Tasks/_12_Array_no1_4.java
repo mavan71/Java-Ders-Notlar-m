@@ -4,7 +4,7 @@ public class _12_Array_no1_4 {
 
     public static void main(String[] args) {
 
-        /*
+/*
         int array oluşturun (intArr)
         Eğer 1 " ve" 4 elemanlarına aynı anda sahip değilse true dönsün.
         Eğer 1 ve 4 elemanlarına aynı anda sahipse false dönsün.
@@ -19,15 +19,41 @@ public class _12_Array_no1_4 {
          */
 
 
-// code start here
-        int sayiArr[] = { 1, 2, 3, 4 };
-        boolean flag = false;
-        for (int i = 0; i < sayiArr.length; i++) {
-            if (sayiArr[i] != 1 && sayiArr[i] != 4) { // and yada or formulunun ikiside alternatif olarak kullanilabilir
-                flag = true;
-            } else flag = false;
+// code
+
+        //1. yöntem
+        boolean b=true;
+        int[] arr= {1,2,3,4};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]==1) {
+                for (int j = 0; j < arr.length; j++) {
+                    if (arr[j]==4) {
+                        b=false;
+                    }
+                }
+            }
         }
-        System.out.println(flag);
+
+        System.out.println(b);
+
+        // 2. yöntem
+        System.out.println("ikinci yöntem");
+        int[] arr2= {1,2,3,4};
+        boolean birVarMi= false;
+        boolean dortVarMi= false;
+        for (int i = 0; i < arr2.length; i++) {
+            if (arr2[i]==1) {
+                birVarMi=true;
+            } else if (arr2[i]==4) {
+                dortVarMi=true;
+            }
+        }
+        if (dortVarMi==true&&birVarMi==true) {
+            System.out.println(false);
+        } else {
+            System.out.println(true);
+        }
+
 
     }
 }

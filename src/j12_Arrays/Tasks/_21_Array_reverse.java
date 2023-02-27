@@ -31,7 +31,15 @@ public class _21_Array_reverse {
           str1+=str.charAt(i);
 
       }
+      int sayi=Integer.parseInt(str1);
+      sayi=sayi+1;
       System.out.println(str1);
+      System.out.println(sayi);
+
+
+
+
+
     }
 }
 

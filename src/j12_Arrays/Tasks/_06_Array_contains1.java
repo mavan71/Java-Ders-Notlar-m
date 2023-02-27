@@ -12,30 +12,30 @@ public class _06_Array_contains1 {
          */
         //Kodu aşağıya yazınız..
 
-     //  String meyveArr[]={ "Apple" , "Orange" , "Banana" , "Pineapple"};
-     //  boolean flag =false;
-     //  for (int i = 0; i <meyveArr.length ; i++) {
-     //      if(meyveArr[i]=="Apple"){
-     //          flag=true;
-     //          System.out.println(true);
-     //          System.out.println("Aple içeriyor");
-     //          break;
-     //      }else {System.out.println(false);
-     //          System.out.println("Apple içermiyor");
-     //          break;
-     //      }
-      //  }
+      String meyveArr[]={ "Apple" , "Orange" , "Banana" , "Pineapple"};
+      boolean flag =false;
+      for (int i = 0; i <meyveArr.length ; i++) {
+          if(meyveArr[i]=="Apple"){
+              flag=true;
+              System.out.println(true);
+              System.out.println("Aple içeriyor");
+              break;
+          }else {System.out.println(false);
+              System.out.println("Apple içermiyor");
+              break;
+          }
+      }
         System.out.println("*********ikinci Yöntem*********");
        //  }
          String MeyveArr[] = {"Apple", "Orange", "Banana", "Pineapple"};
 
-        boolean flag = false;
+        boolean flag2 = false;
         for (int i = 0; i < MeyveArr.length; i++) {
         if (MeyveArr[i].equals("Apple")) {
-            System.out.println(flag = true); // bu deger bulundugunda sistem donguye devam ediyor
+            System.out.println(flag2 = true); // bu deger bulundugunda sistem donguye devam ediyor
             break;
         } else {
-            System.out.println(flag = false);
+            System.out.println(flag2 = false);
             break;// kodu kırmak icin
 }
         }
