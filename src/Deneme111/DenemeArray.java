@@ -5,29 +5,29 @@ import java.util.Scanner;
 
 public class DenemeArray {
     public static void main(String[] args) {
-      //  int a;
-      //  int b[];
-      //  String isimArr[] = {"Ahmet", "Mehmet", "Muhammed", "Mustafa"};
-      //  int Arr[] = new int[5];
-      //  Arr[1] = 25;
-      //  Arr[2] = 24;
-      //  Arr[3] = 34;
-      //  Arr[4] = 56;
-      //  Arr[0] = 12;
-      //  System.out.println("Arrays.toString(Arr) = " + Arrays.toString(Arr));//Arrays.toString(Arr) = [12, 25, 24, 34, 56]
-      //  Arrays.sort(Arr);
-      //  System.out.println("Arrays.toString(Arr) = " + Arrays.toString(Arr));//Arrays.toString(Arr) = [12, 24, 25, 34, 56]
-      //  System.out.println(Arr);//[I@26ba2a48
-      //  System.out.println(Arr + " ");//[I@26ba2a48
-      //  for (int i = 0; i < Arr.length; i++) {
-      //      System.out.print(Arr[i]+" ");//12 24 25 34 56
+        int a;
+        int b[];
+        String isimArr[] = {"Ahmet", "Mehmet", "Muhammed", "Mustafa"};
+        int Arr[] = new int[5];
+        Arr[1] = 25;
+        Arr[2] = 24;
+
+        Arr[4] = 56;
+        Arr[0] = 12;
+        System.out.println("Arrays.toString(Arr) = " + Arrays.toString(Arr));//Arrays.toString(Arr) = [12, 25, 24, 34, 56]
+        Arrays.sort(Arr);
+        System.out.println("Arrays.toString(Arr) = " + Arrays.toString(Arr));//Arrays.toString(Arr) = [12, 24, 25, 34, 56]
+        System.out.println(Arr);//[I@26ba2a48
+        System.out.println(Arr + " ");//[I@26ba2a48
+        for (int i = 0; i < Arr.length; i++) {
+            System.out.print(Arr[i]+" ");//12 24 25 34 56
 //
-      //  }
-      //  System.out.println();
-      //  for (int i = 0; i <=Arr.length-1 ; i++) {
-      //      if(Arr[i]%2==0){
-      //          System.out.print(Arr[i]+" ");//12 24 34 56
-      //      }
+        }
+        System.out.println();
+        for (int i = 0; i <=Arr.length-1 ; i++) {
+            if(Arr[i]%2==0){
+                System.out.print(Arr[i]+" ");//12 24 34 56
+            }
 //
       //  }
       //  for (int i = 0; i <isimArr.length ; i++) {
@@ -52,15 +52,15 @@ public class DenemeArray {
       //      }
       //  }
       //  // array'de eleman kontrolu
-        int Arr[]={2, 46, 31, 80, 44, 63, 27, 21, 79};
+        int Arr1[]={2, 46, 31, 80, 44, 63, 27, 21, 79};
 
         int sayi1 =44;
         int sayi2=32;
 
         boolean flag=false;
 
-        for (int i = 0; i < Arr.length; i++) {
-            if (Arr[i]==sayi2) {
+        for (int k = 0; k < Arr1.length-1; k++) {
+            if (Arr1[k]==sayi2) {
             flag=true;
            break;
             }
@@ -110,7 +110,7 @@ public class DenemeArray {
 
         //Array kopyalama...copyOf();->girilen arr'in newLength ekadar ilk elemanını kopyalar
         System.out.println("Arrays.toString(Arr) = " + Arrays.toString(Arr));//[2, 21, 27, 31, 44, 46, 63, 79, 80]
-        int [] Arr1=Arrays.copyOf(Arr,3);//Arr nin ilk 3 elemamanını al Arr1 dizisi yap
+        int [] Arr2=Arrays.copyOf(Arr,3);//Arr nin ilk 3 elemamanını al Arr1 dizisi yap
         System.out.println("Arrays.toString(Arr1) = " + Arrays.toString(Arr1));//[2, 21, 27]
         //task-> arr'nin son  3 elemanını atandığı arrayi print eden code create ediniz.
        int Arr3[]= Arrays.copyOfRange(Arr,Arr.length-3,Arr.length);
@@ -126,18 +126,18 @@ public class DenemeArray {
         System.out.println("Ağam Kaç sayı girecen ");
         int arrBoyut=input.nextInt();
         int Arr5[]=new int [arrBoyut];
-        for (int i = 0; i <arrBoyut ; i++) {
+        for (int l = 0; l <arrBoyut ; l++) {
             System.out.println("Ağam " +i+" indexi gir. ");
-            Arr5[i]=input.nextInt();
+            Arr5[l]=input.nextInt();
 
         }
         System.out.println("Arrays.toString(Arr5) = " + Arrays.toString(Arr5));//Arrays.toString(Arr5) = [23, 67, 12, 89]
         Arrays.sort(Arr5);
         System.out.println("Arrays.toString(Arr5) = " + Arrays.toString(Arr5));//Arrays.toString(Arr5) = [12, 23, 67, 89]
         int Arr6[]=new int[arrBoyut] ;
-        for (int i =Arr5.length-1; i >=0 ; i--) {
-            Arr6[i]=Arr5[i];
-            System.out.print(Arr6[i]+" ");//89 56 23 12
+        for (int m =Arr5.length-1; m >=0 ; m--) {
+            Arr6[m]=Arr5[m];
+            System.out.print(Arr6[m]+" ");//89 56 23 12
 
         }
         System.out.println("Arrays.toString(Arr6) = " + Arrays.toString(Arr6));//Arrays.toString(Arr6) = [12, 23, 56, 89]
@@ -146,17 +146,26 @@ public class DenemeArray {
         System.out.println("Ağam Kaç sayı girecen ");
         int arrBoyut1=input.nextInt();
         int Arr7[]=new int [arrBoyut1];
-        for (int i = 0; i <arrBoyut1 ; i++) {
-            System.out.println("Ağam " +i+" indexi gir. ");
-            Arr7[i]=input.nextInt();
+        for (int p = 0; p <arrBoyut1 ; p++) {
+            System.out.println("Ağam " +p+" indexi gir. ");
+            Arr7[p]=input.nextInt();
 
         }
         int toplam=0;
-        for (int i = 0; i <Arr7.length; i++) {
-            toplam+=Arr7[i];
+        for (int r = 0; r <Arr7.length; r++) {
+            toplam+=Arr7[r];
         }
         System.out.println("toplam = " +toplam);
     }
-}
+        String str[]=new String[3];
+        str[1] = "toyota";
+        str[2] = "audi";
+
+        System.out.println("Arrays.toString(Arr) = " + Arrays.toString(Arr));//Arrays.toString(Arr) = [12, 25, 24, 34, 56]
+        Arrays.sort(Arr);
+        System.out.println("Arrays.toString(Arr) = " + Arrays.toString(Arr));//Arrays.toString(Arr) = [12, 24, 25, 34, 56]
+        System.out.println(Arr);//[I@26ba2a48
+
+}}
 
 
