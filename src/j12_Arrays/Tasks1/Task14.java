@@ -13,11 +13,33 @@ public class Task14 {
         trick : Use --> Character.isDigit()
                     --> Integer.valueOf()
          */
-
-
+        rakamToplamı();
 
     }
+    private static void rakamToplamı() {
+        String strArr[]={"ade1r4d3","Anta2lya2023","expo1453", "maslak1071","cevizlibağ1881","he1def2071"};
+        int numArr[]=new int[strArr.length];
+        for (int i = 0; i < strArr.length; i++) {
+            strArr[i]=strArr[i].replaceAll("\\D", "");
+
+        }
+        System.out.println(Arrays.toString(strArr));
 
 
+        int toplam=0;
+        for (int i = 0; i <strArr.length; i++) {
+            toplam+=Integer.parseInt(strArr[i]);
+        }
+
+        System.out.println("toplam = " + toplam);
 }
+}
+
+
+
+
+
+
+
+
 

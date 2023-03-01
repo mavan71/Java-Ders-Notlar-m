@@ -1,4 +1,4 @@
-package j12_Arrays.Tasks1;
+package j12_Arrays.Tasks;
 
 public class taskdeneme {
 

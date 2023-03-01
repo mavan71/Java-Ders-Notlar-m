@@ -12,8 +12,19 @@ public class Task13 {
         3 e bolunebilen sayi adedini print eden  code create ediniz (negatif sayilar dahil )
 
          */
-System.out.println("merhaba1");
 
+        int sayiArr [] ={12,16,14,15,18,19,33,45};
+        int sayac=0;
+
+
+        for (int i = 0; i < sayiArr.length; i++) {
+            if(sayiArr[i]%3==0){
+                sayac++;
+            }
+
+        }
+        System.out.println("Girilen 8 elemanli arrayin icinde\n" +
+                "        3 e bolunebilen "+sayac+ " sayi vardır ");
 
 
     }

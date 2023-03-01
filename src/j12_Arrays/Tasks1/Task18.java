@@ -8,5 +8,21 @@ public class Task18 {
         // input :int sayi[][]={{1,2,3},{19,-8},{24,10,-41}};
         // output : int yeniArr[]={6,11,-7}
 
+        System.out.println("***************1. yontem **********");
+        int arr3 [][] = {
+                {3,5},
+                {2,4,1},
+                {6,1,2,2},
+        };
+        int yeniArr[]=new int [arr3.length];
+
+        for (int i = 0; i < arr3.length; i++) {
+            for (int j = 0; j < arr3[i].length; j++) {
+                yeniArr[i]+=arr3[i][j];
+            }
+        }
+        System.out.println(Arrays.toString(yeniArr));
+
+
     }
 }
