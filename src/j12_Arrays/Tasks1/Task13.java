@@ -1,5 +1,6 @@
 package j12_Arrays.Tasks1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 import static java.sql.DriverManager.println;
@@ -14,6 +15,7 @@ public class Task13 {
          */
 
         int sayiArr [] ={12,16,14,15,18,19,33,45};
+        System.out.println("Arrays.binarySearch(12) = " + Arrays.binarySearch(sayiArr,19));
         int sayac=0;
 
 
