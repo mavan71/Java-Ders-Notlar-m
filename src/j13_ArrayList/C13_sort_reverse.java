@@ -13,6 +13,7 @@ public class C13_sort_reverse {
         Collections.sort(ulkelist);//sort return type void oldg sout  run edilmez
         System.out.println("sortingen sonrası ulkelist = " + ulkelist);//[Alamanya, Amerigonya, Dingiltere, Güba, Polkonya]
 
+
         //****Çoooğğğ Önemli :) Ahan da TRICK köşesinde böğünn: reverse() method list elemanlarını index sırasına göre ters sıralar..
 
         ArrayList<String> cityList = new ArrayList<>(Arrays.asList("Angara", "Gonya", "Maraş", "Ayıntap", "Süvas"));//çuval
@@ -20,7 +21,7 @@ public class C13_sort_reverse {
 
         Collections.reverse(cityList);
 
-        System.out.println("reverse sonrası cityList = " + cityList);
+        System.out.println("reverse sonrası cityList = " + cityList);//[Süvas, Ayıntap, Maraş, Gonya, Angara]
 
 
     }

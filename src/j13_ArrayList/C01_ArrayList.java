@@ -11,8 +11,11 @@ public class C01_ArrayList {
         int ageArr[] = new int[10];//10 primitive data depolayan variable
         int ageArr1[][] = new int[10][3];//10*3 primitive data depolayan variable
         ArrayList<Integer> ageList = new ArrayList<>();//istenildiği kadar primitive data depolayan variable
-        //   ArrayList<int> ageList1 = new ArrayList<>();//istenildiği kadar primitive data depolayan variable
+        //ArrayList<int> ageList1 = new ArrayList<>();//istenildiği kadar primitive data depolayan variable
         //<>: generix diamond operator
+        List<Integer> ageList1 = new ArrayList<>();
+        //List<Integer> ageList = new List<>();//YANLIŞ
+        //ArrayList<Integer> ageList2 = new List<>();//YANLIŞ
         /*
      Array List genel Tanimi:
 
@@ -88,6 +91,9 @@ public class C01_ArrayList {
         };
         System.out.println("ebıkList = " + rakamlist);//[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-
+ArrayList<Integer>list= new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9,0));
+ArrayList<Integer>list1=new ArrayList<Integer>(List.of(11,112,13,14,15,16,17));
+        System.out.println(list);
+        System.out.println(list1);
     }
 }

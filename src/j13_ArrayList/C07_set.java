@@ -10,7 +10,7 @@ public class C07_set {
         ArrayList<String> ulkelist = new ArrayList<>(Arrays.asList("Alamanya", "Güba", "Polkonya", "Dingiltere", "Amerigonya"));//çuval
         System.out.println("set öncesi ulkelist = " + ulkelist);//[Alamanya, Güba, Polkonya, Dingiltere, Amerigonya]
         System.out.println("ulkelist.set(3,\"Patagonya\") = " + ulkelist.set(3, "Patagonya"));//3. index eski eleman return eder
-        System.out.println("set sonrası ulkelist = " + ulkelist);//[Alamanya, Güba, Polkonya, Dingiltere, Amerigonya]
+        System.out.println("set sonrası ulkelist = " + ulkelist);//[Alamanya, Güba, Polkonya, Patagonya, Amerigonya]
 
         // System.out.println("ulkelist.set(3,\"Patagonya\") = " + ulkelist.set(33, "PataGONYA"));//olmayan index RTE
        // ulkelist.set(3, "a", 5, "b");//CTE set method çoklu parametre çalışmaz

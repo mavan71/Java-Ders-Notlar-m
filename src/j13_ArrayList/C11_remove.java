@@ -23,7 +23,9 @@ public class C11_remove {
         System.out.println("remove öncersi cityList = " + cityList);//[Angara, Gonya, Maraş, Ayıntap, Süvas]
 
         System.out.println("cityList.removeAll(cityList) = " + cityList.removeAll(cityList));//true
+        System.out.println("remove öncersi cityList = " + cityList);//[]
         System.out.println("cityList.removeAll(ulkelist) = " + cityList.removeAll(ulkelist));//false
+        System.out.println("remove öncesi ulkelist = " + ulkelist);//[Alamanya, Polkonya, Dingiltere, Angara, Gonya, Maraş, Ayıntap, Süvas]
         System.out.println("ulkelist.removeAll(cityList) = " + ulkelist.removeAll(cityList));//false
         System.out.println("remove ulkelist = " + ulkelist);//[Alamanya, Polkonya, Dingiltere, Angara, Gonya, Maraş, Ayıntap, Süvas]
         System.out.println("remove sonrası cityList = " + cityList);//[]
