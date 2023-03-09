@@ -1,6 +1,6 @@
 package j23_AccessModifier;//package level
 
-import j23_AccessModifier.baskaPackage.C03_AccessModifierRunner;
+//import j23_AccessModifier.baskaPackage.C03_AccessModifierRunner;
 
 /*
              1) "private" class member'lar sadece icinde bulunduklari class'lardan erişilebilir.

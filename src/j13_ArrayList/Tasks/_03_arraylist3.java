@@ -21,6 +21,18 @@ public class _03_arraylist3 {
 
     public static void main(String[] args) {
 
+    ArrayList<String>list3=new ArrayList<>(Arrays.asList("New jersey" ,"New york" , "Ohio" , "Florida" , "Boston"));
+        getLength(list3);
+
 
     }
+
+    private static void getLength(ArrayList<String> list3) {
+        ArrayList<Integer> uzunluk = new ArrayList<>();
+        for (int i = 0; i < list3.size(); i++) {
+           uzunluk.add(list3.get(i).length());
+        }
+        //return uzunluk;
+    }
+
 }
