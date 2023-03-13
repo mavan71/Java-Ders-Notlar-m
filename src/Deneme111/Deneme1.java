@@ -3,6 +3,16 @@ package Deneme111;
 import java.util.Scanner;
 
 public class Deneme1 {
+
+
+
+    private static void methodB(int i, double i1) {
+        System.out.println("Method B Çalıştı");
+    }
+
+    private static void methodA(double i) {
+        System.out.println("Method A Çalıştı");
+    }
     //girilen bir ifadede ki harf sayısını bulma
     public static void main(String[] args) {
      //  Scanner input = new Scanner(System.in);
@@ -135,7 +145,35 @@ public class Deneme1 {
      //   System.out.println(str.substring(str.length()/ 2));
 
 
+        methodA(25);
+        methodA(12.5);
+        methodB(12, 25);
+        methodB(12, 12.5);
+        StringBuilder str1=new StringBuilder("AVATAR");
+        System.out.println("str1.subSequence(2,4) = " + str1.subSequence(2, 4));
+        System.out.println("str1.subSequence(0,4) = " + str1.subSequence(0, 4));
+        str1.reverse();
+        str1.deleteCharAt(2);
+        System.out.println(str1);
+
+        // create a StringBuilder object
+        // with a String pass as parameter
+        StringBuilder str
+                = new StringBuilder("WelcomeGeeks");
+
+        // print string
+        System.out.println("String contains = " + str);
+
+        // get subSequence between index 0 to 7
+        // using subSequence() and print
+        System.out.println("SubSequence = "
+                + str.subSequence(0, 7));
+
+
+
     }
+
+
 
 }
 
